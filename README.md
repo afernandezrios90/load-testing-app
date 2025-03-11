@@ -13,7 +13,7 @@ It executes different load tests for a given application. Currently the code inc
 - Spikes --> High punctual load (ideal for testing resiliency)
 
 > [!TIP]
-> Uncomment the code area of one of the test, or create the test stages from scratch (the ones are simple guidelines to start working with it). One example:
+> Uncomment the code area of one of the test, or create the test stages from scratch (the existing ones are simple guidelines to start working with it). One example:
 > ```js
 > /* Option 3: Spike Test */
 > /*
