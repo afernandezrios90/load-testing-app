@@ -2,7 +2,7 @@
 Repository for deploying a tool to execute load tests on apps.
 The tool is based on Grafana k6
 
->!IMPORTANT
+> [!IMPORTANT]
 > The main script configuration for the test (`load-test.js`) has been configured to test [virtual-store-app](https://github.com/afernandezrios90/virtual-store). To test to another app or service, adapt the script as desired.
 
 ## Functionality
