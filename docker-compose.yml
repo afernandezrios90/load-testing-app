@@ -8,8 +8,8 @@ services:
     container_name: k6-load-test
     networks:
       - grafana-network
-    restart: unless-stopped
+    restart: no # To avoid start the test again after a crash or finish
 
 networks:
   grafana-network:
-    external: true # Red ya creada en mi despliegue de Grafana
+    external: true # Already created in my Grafana deployment
