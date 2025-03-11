@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  k6-load-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: k6-load-test
+    networks:
+      - grafana-network
+    restart: unless-stopped
+
+networks:
+  grafana-network:
+    external: true # Red ya creada en mi despliegue de Grafana
