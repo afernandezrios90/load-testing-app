@@ -2,9 +2,9 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export let options = {
-  vus: 1, // 1 virtual user
+  vus: 10, // 1 virtual user
   duration: '1m', // Execute for 1 minute
-  iterations: 10, // Repeat 10 times
+  iterations: 30, // Repeat 10 times
 };
 
 export default function () {
@@ -21,5 +21,5 @@ export default function () {
     'is status 200': (r) => r.status === 200 || r.status === 404, // Check if the status code is 200 or 404
   });
 
-  sleep(6);  // Wait for 6 seconds before making the next request
+  sleep(2);  // Wait for 6 seconds before making the next request
 }
